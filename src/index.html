@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Pantau Covid-19</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+            <div class="container">
+                <a class="navbar-brand" href="#"><b>Pantau Covid-19</b></a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mt-5">
+                    <div class="text-center">
+                        <h3><strong> Pantau Covid-19</strong></h3>
+                        <p class="lead">
+                            " Ayo Bersama-sama kita kawal dan pantau perkembangan covid-19
+                            di Indonesia dan Dunia ! "
+                        </p>
+                        <br>
+                        <h3><strong>Corona Virus Global & Indonesia Live Data</strong></h3>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body bg-danger text-white">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <i class="fa fa-stethoscope fa-4x"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 id="confirm_global" class="info_bold"></h4>
+                                            <p class="info_bold">TOTAL POSITIF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body bg-success text-white">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <i class="fa fa-user fa-4x"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 id="recovered_global" class="info_bold"></h4>
+                                            <p class="info_bold"> TOTAL SEMBUH</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body bg-purple text-white">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <i class="fa fa-user-times fa-4x"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h4 id="death_global" class="info_bold"></h4>
+                                            <p class="info_bold"> TOTAL MENINGGAL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body bg-info text-white">
+                                    <h4><b>INDONESIA</b></h4>
+                                    <div id="indonesia_global"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 id="update_date" class="text-center mt-2"></h6>
+                </div>
+                <br />
+                <div class="alert alert-success">
+                    <h5> Pusat Informasi Tentang COVID-19 :
+                        <a href="https://www.covid19.go.id/" target="_blank">https://www.covid19.go.id/</a></h5>
+                </div>
+                <br />
+                <div class="card">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title">
+                            Statistik Kasus Coronavirus di Indonesia
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body bg-danger text-white">
+                                        <p class="info_bold">POSITIF</p>
+                                        <h4 id="indo_positif" class="info_bold"></h4>
+                                        <p>Orang</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body bg-success text-white">
+                                        <p class="info_bold"> SEMBUH</p>
+                                        <h4 id="indo_sembuh" class="info_bold"></h4>
+                                        <p>Orang</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body bg-dark text-white">
+                                        <p class="info_bold">MENINGGAL</p>
+                                        <h4 id="indo_meninggal" class="info_bold"></h4>
+                                        <p>Orang</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h2 class="info_bold mb-2">Rank Provinsi :</h2>
+                        <div id="cek_statistik"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Detail Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="provinsi" class="table table-striped" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Provinsi</th>
+                                        <th>Positif</th>
+                                        <th>Sembuh</th>
+                                        <th>Meninggal</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
