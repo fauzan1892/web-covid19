@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 function main() {
 
     const getDataGlobal = async () => {
@@ -59,7 +57,6 @@ function main() {
         alert(message);
     };
 
-
     const formatRibuan = (nStr) => {
         if (nStr >= 1000) {
             nStr += '';
@@ -76,12 +73,13 @@ function main() {
         }
     }
 
-
     document.addEventListener("DOMContentLoaded", () => {
         getDataGlobal();
         getDataIndonesia();
         var d = new Date();
-        document.getElementById('update_date').innerHTML = `Data di akses dan di update pada : ${d}`;
+        document.getElementById('update_date').innerHTML = `Data di akses dan di update pada : ${d} <br>
+            [ Sumber Informasi Data Oleh : <a href="https://covid19.mathdro.id/api">
+            https://covid19.mathdro.id/api</a> ]`;
     });
 }
 

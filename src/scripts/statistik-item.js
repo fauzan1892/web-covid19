@@ -1,7 +1,3 @@
-const {
-    unique
-} = require("webpack-merge");
-
 class StatistikItem extends HTMLElement {
     connectedCallback() {
         this.render();
@@ -31,18 +27,19 @@ class StatistikItem extends HTMLElement {
                             if (index == 3) {
                                 var skin = "text-white bg-warning"
                             }
+
                             this.innerHTML += `<div class="card mt-2">
-                                        <div class="card-body ${skin}">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <h5><b>#${index+1}. ${prov.provinsi}</b></h5>
-                                                </div>
-                                                <div class="col-9">
-                                                    <h5><b> Positif : ${prov.kasusPosi}, Sembuh : ${prov.kasusSemb}, Meninggal : ${prov.kasusMeni}</b></h5>
-                                                </div>
+                                    <div class="card-body ${skin}">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h5><b>#${index+1}. ${prov.provinsi}</b></h5>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <h5><b> Positif : ${prov.kasusPosi}, Sembuh : ${prov.kasusSemb}, Meninggal : ${prov.kasusMeni}</b></h5>
                                             </div>
                                         </div>
-                                    </div>`;
+                                    </div>
+                                </div>`;
                         }
                         index++;
                     })

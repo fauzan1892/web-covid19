@@ -11,13 +11,14 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-info">
             <div class="container">
-                <a class="navbar-brand" href="#"><b>Pantau Covid-19</b></a>
+                <a class="navbar-brand" href=""><b>Pantau Covid-19</b></a>
             </div>
         </nav>
     </header>
     <main class="container">
         <div class="row">
             <div class="col-12">
+                <!-- pantau covid dan statistik global -->
                 <div class="mt-5">
                     <div class="text-center">
                         <h3><strong> Pantau Covid-19</strong></h3>
@@ -25,12 +26,11 @@
                             " Ayo Bersama-sama kita kawal dan pantau perkembangan covid-19
                             di Indonesia dan Dunia ! "
                         </p>
-                        <br>
                         <h3><strong>Corona Virus Global & Indonesia Live Data</strong></h3>
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 mt-2">
                             <div class="card">
                                 <div class="card-body bg-danger text-white">
                                     <div class="row">
@@ -44,8 +44,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3">
+                        </div><!-- col-sm-3 mt-2 -->
+                        <div class="col-sm-3 mt-2">
                             <div class="card">
                                 <div class="card-body bg-success text-white">
                                     <div class="row">
@@ -59,8 +59,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3">
+                        </div><!-- col-sm-3 mt-2 -->
+                        <div class="col-sm-3 mt-2">
                             <div class="card">
                                 <div class="card-body bg-purple text-white">
                                     <div class="row">
@@ -74,33 +74,37 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-3">
+                        </div><!-- col-sm-3 mt-2 -->
+                        <div class="col-sm-3 mt-2">
                             <div class="card">
                                 <div class="card-body bg-info text-white">
                                     <h4><b>INDONESIA</b></h4>
                                     <div id="indonesia_global"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- col-sm-3 mt-2 -->
                     </div>
-                    <h6 id="update_date" class="text-center mt-2"></h6>
+                    <h6 id="update_date" class="text-center mt-3"></h6>
                 </div>
-                <br />
-                <div class="alert alert-success">
+                <!-- end pantau covid dan statistik global -->
+
+                <!-- alert web covid -->
+                <div class="alert alert-success mt-4">
                     <h5> Pusat Informasi Tentang COVID-19 :
                         <a href="https://www.covid19.go.id/" target="_blank">https://www.covid19.go.id/</a></h5>
                 </div>
-                <br />
-                <div class="card">
+                <!-- end alert web covid -->
+
+                <!-- statistik covid indonesia card -->
+                <div class="card mt-2">
                     <div class="card-header text-white bg-primary">
-                        <h5 class="card-title">
+                        <h4 class="card-title">
                             Statistik Kasus Coronavirus di Indonesia
-                        </h5>
+                        </h4>
                     </div>
                     <div class="card-body">
                         <div class="row text-center">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 mt-2">
                                 <div class="card">
                                     <div class="card-body bg-danger text-white">
                                         <p class="info_bold">POSITIF</p>
@@ -108,8 +112,8 @@
                                         <p>Orang</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
+                            </div><!-- col-sm-4 mt-2 -->
+                            <div class="col-sm-4 mt-2">
                                 <div class="card">
                                     <div class="card-body bg-success text-white">
                                         <p class="info_bold"> SEMBUH</p>
@@ -117,8 +121,8 @@
                                         <p>Orang</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
+                            </div><!-- col-sm-4 mt-2 -->
+                            <div class="col-sm-4 mt-2">
                                 <div class="card">
                                     <div class="card-body bg-dark text-white">
                                         <p class="info_bold">MENINGGAL</p>
@@ -126,17 +130,28 @@
                                         <p>Orang</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div><!-- col-sm-4 mt-2 -->
                         </div>
-                        <hr>
-                        <h2 class="info_bold mb-2">Rank Provinsi :</h2>
+                    </div>
+                </div>
+                <!-- end statistik covid indonesia card -->
+                
+                <!-- ranking provinsi card -->
+                <div class="card mt-3">
+                    <div class="card-header bg-info text-white">
+                        <h4 class="card-title">Ranking Provinsi Terpapar Covid-19  </h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- create custom element -->
                         <div id="cek_statistik"></div>
                     </div>
                 </div>
-                <br>
-                <div class="card">
+                <!-- end ranking provinsi card -->
+
+                <!-- detail Kasus card -->
+                <div class="card mt-3 mb-5">
                     <div class="card-header">
-                        <h5>Detail Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h5>
+                        <h4 class="card-title">Detail Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h4>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -155,11 +170,18 @@
                         </div>
                     </div>
                 </div>
-                <br />
+                <!-- end detail Kasus card -->
+                
             </div>
         </div>
-
     </main>
+    <footer class="footer bg-info text-white">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="font-size:12pt">
+            <b>Statistik Covid 19 - Submission Dicoding</b>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 
 </html>
