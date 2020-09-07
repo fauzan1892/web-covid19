@@ -27,5 +27,6 @@ $.getJSON('https://indonesia-covid-19.mathdro.id/api/provinsi', function (respon
             }
         ]
     });
+    
     window.someGlobalOrWhatever = response.balance
 });
